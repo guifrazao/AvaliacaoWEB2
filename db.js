@@ -1,3 +1,4 @@
+// sga-backend/src/config/db.js
 const mysql = require('mysql2');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -17,4 +18,5 @@ connection.connect((err) => {
     console.log('Conectado ao MySQL com ID: ' + connection.threadId);
 });
 
-module.exports = connection.promise(); 
+// Exporta a conexão para ser usada nos Models
+module.exports = connection.promise(); // Usando .promise() para async/await
