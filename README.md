@@ -34,9 +34,9 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente local
 
 Certifique-se de ter as seguintes ferramentas instaladas:
 
-* **Node.js** (versão LTS recomendada, ex: v18.x ou superior)
-* **npm** ou **Yarn** (Gerenciador de pacotes)
-* **Docker** e **Docker Compose** (Opcional, mas recomendado para o ambiente de banco de dados)
+* **Node.js** 
+* **npm**
+* **Docker**
 
 ### 2. Clonagem do Repositório
 
