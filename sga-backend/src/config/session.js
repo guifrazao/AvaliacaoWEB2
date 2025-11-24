@@ -3,9 +3,6 @@ const session = require('express-session');
 const dotenv = require('dotenv');
 dotenv.config();
 
-// CORREÇÃO: A requisição de localhost:3000 para localhost:3001 é considerada "cross-site" por navegadores.
-// O 'sameSite: lax' estava bloqueando o envio do cookie.
-// Alteramos para 'sameSite: false' para desabilitar a restrição no ambiente de desenvolvimento local (HTTP).
 const sessionConfig = session({
     secret: process.env.SESSION_SECRET, // Chave para assinar o ID da sessão
     resave: false,
