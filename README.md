@@ -36,7 +36,6 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 * **Node.js** 
 * **npm**
-* **Docker**
 
 ### 2. Clonagem do Repositório
 
