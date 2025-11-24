@@ -36,19 +36,94 @@ Este projeto foi desenvolvido em conjunto pelos seguintes membros:
 
 ## ⚙️ Instruções de Instalação e Execução
 
-Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
-
 ### 1. Pré-requisitos
 
-Certifique-se de ter as seguintes ferramentas instaladas:
+Certifique-se de que os seguintes softwares estão instalados no seu ambiente local antes de prosseguir:
 
-* **Node.js** 
-* **npm**
+* Node.js 
+* npm 
+* MySQL 
+* Git 
+* Um editor de código (como VS Code, Sublime, etc) e terminal de linha de comando.
 
 ### 2. Clonagem do Repositório
 
-Clone o projeto para sua máquina local e navegue até o diretório:
+Abra o terminal e execute os seguintes comandos para obter o código-fonte no seu computador:
 
 ```bash
-git clone [https://github.com/guifrazao/AvaliacaoWEB2.git](https://github.com/guifrazao/AvaliacaoWEB2.git)
+git clone https://github.com/guifrazao/AvaliacaoWEB2.git
 cd AvaliacaoWEB2
+```
+
+### 3. Configuração do Banco de Dados
+
+1. Crie um banco de dados (por exemplo: `sga_db`).
+2. Configure as credenciais de acesso (usuário, senha, host, porta) conforme o seu sistema de banco de dados.
+3. Localize o arquivo de configuração do backend (por exemplo `config/db.js`, `.env`, ou similar) e ajuste para apontar para o banco recém-criado.
+4. Se houver scripts de migração ou seed (população inicial), execute-os para preparar as tabelas e relacionamentos (chaves estrangeiras, etc).
+
+   ```bash
+   # Exemplo genérico, adapte conforme o seu projeto:
+   npm run migrate
+   npm run seed
+   ```
+
+### 4. Instalação e Execução do Backend
+
+1. Navegue até o diretório do backend (por exemplo `sga-backend`)
+
+   ```bash
+   cd sga-backend
+   ```
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+3. Configure quaisquer variáveis de ambiente necessárias (por exemplo em `.env`):
+
+   ```
+   PORT=4000
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_USER=usuario
+   DB_PASSWORD=senha
+   DB_NAME=sga_db
+   JWT_SECRET=algumSegredo
+   ```
+4. Inicie o servidor backend:
+
+   ```bash
+   npm start
+   ```
+
+   O servidor ficará disponível em `http://localhost:4000` (ou outra porta conforme a configuração).
+
+### 5. Instalação e Execução do Frontend
+
+1. Em outro terminal, navegue até o diretório do frontend (por exemplo `sga-frontend`):
+
+   ```bash
+   cd ../sga-frontend
+   ```
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+3. Ajuste o endpoint da API se for necessário (geralmente em um arquivo como `src/config.js` ou `.env`):
+
+   ```env
+   REACT_APP_API_URL=http://localhost:4000/api
+   ```
+4. Inicie a aplicação frontend em modo de desenvolvimento:
+
+   ```bash
+   npm start
+   ```
+
+   A interface abrirá no navegador em `http://localhost:3000` (ou outra porta configurada).
+5. Acesse e teste o fluxo da aplicação: cadastro, login, CRUD de Cursos/Alunos/Professores, etc.
+
+
+
