@@ -4,7 +4,9 @@
 
 Este projeto consiste em um sistema completo, desenvolvido como requisito final para a disciplina de **WEB 2**. A aplicação é construída com uma arquitetura moderna, englobando as três camadas principais de desenvolvimento: **frontend**, **backend** e **banco de dados**.
 
-**O Sistema de Gerenciamento Acadêmico (SGA) é uma aplicação full-stack desenvolvida para gerenciar entidades de uma instituição de ensino (Cursos, Alunos e Professores). O objetivo principal é implementar um sistema CRUD (Create, Read, Update, Delete) completo, utilizando arquitetura MVC e garantindo a integridade de dados através de relacionamentos em banco de dados relacional (chaves estrangeiras) e segurança por meio de autenticação de usuários.**
+O **Sistema de Gerenciamento Acadêmico (SGA)** é uma aplicação full-stack desenvolvida para gerenciar entidades de uma instituição de ensino (Cursos, Alunos e Professores). O objetivo principal é implementar um sistema CRUD (Create, Read, Update, Delete) completo, utilizando arquitetura MVC e garantindo a integridade de dados através de relacionamentos em banco de dados relacional (chaves estrangeiras) e segurança por meio de autenticação de usuários.
+
+Em um contexto real, sistemas como o SGA desempenham papel crucial no gerenciamento eficiente de instituições educacionais, otimizando processos, reduzindo erros operacionais e facilitando o acesso seguro a informações relevantes. Portanto, além de cumprir os requisitos acadêmicos, este projeto também destaca a relevância prática de soluções web bem estruturadas no ambiente educacional moderno.
 
 * **Frontend (Interface do Usuário):** Responsável pela interação visual e experiência do usuário (UX/UI).
 * **Backend (Servidor/API):** Gerencia a lógica de negócio, a autenticação, a autorização e a comunicação com o banco de dados.
@@ -15,6 +17,12 @@ Este projeto consiste em um sistema completo, desenvolvido como requisito final 
 ## 👥 Integrantes do Grupo
 
 Este projeto foi desenvolvido em conjunto pelos seguintes membros:
+
+* Carlos Henrique Moreira Gonçalves
+* Gustavo Alves dos Santos
+* Guilherme Augusto Frazão Ribeiro
+* Henrique Carvalho de Andrade
+* Kendy de Oliveira Outi
 
 | Papel Principal | Nome | Contribuição |
 | :--- | :--- | :--- |
